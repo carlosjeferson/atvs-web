@@ -1,18 +1,21 @@
 body {
     font-family: 'Verdana', sans-serif; /* fonte diferente aplicada a todo o texto */
-    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPhQ4She_6SXGLbhOUWA1j-Dd2WYwpVHEIjQ&s') no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    margin: 0;
+    background-color: #f1e9bb;
 }
 
-a {
+nav a {
     font-weight: bold;
     text-decoration: none;
+    padding: 8px;
     color: rgb(21, 79, 21);
 }
 
-a:hover {
-    text-decoration: underline;
+nav a:hover {
+    color: white;
+    background-color: rgb(21, 79, 21);
+    border-radius: 8px;
+    transition: ease 0.3s;
 }
 
 img {
@@ -31,6 +34,7 @@ li {
 }
 
 nav {
+    background-color: #f3c36388;
     text-align: center;
     padding: 20px;
 }
