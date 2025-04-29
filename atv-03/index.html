@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CodeLog</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#categoria">Categórias</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="layout">
+            <section id="sobre">
+                <h2>Sobre o Blog</h2>
+                <p>Este blog foi criado com o objetivo de compartilhar conhecimentos, experiências e aprendizados ao longo da minha jornada como estudante de Sistemas de Informação e futuro desenvolvedor web.</p>
+                <p>Aqui você encontrará artigos sobre HTML, CSS, JavaScript, projetos pessoais, dicas de estudos e reflexões sobre a vida na área de tecnologia.</p>
+                <p>A ideia é construir uma comunidade onde todos possam aprender juntos, crescer profissionalmente e se inspirar. Sinta-se à vontade para explorar os conteúdos, deixar comentários e fazer parte dessa jornada!</p>
+            </section>
+            <article>
+                <img src="https://img.freepik.com/fotos-gratis/retrato-de-homem-branco-isolado_53876-40306.jpg?semt=ais_hybrid&w=740" alt="Foto de Perfil" width="200" height="150">
+                <div>
+                    <h1>Começando Meu Blog de Desenvolvimento</h1>
+                    <p><em>Publicado em 29 de abril de 2025</em></p>
+                    <p>Hoje é um dia especial! Estou iniciando meu blog com o objetivo de compartilhar minha jornada como estudante de Sistemas de Informação e aspirante a desenvolvedor web. Aqui você vai encontrar dicas de HTML, CSS, JavaScript e muito mais sobre o mundo da programação.</p>
+                    <p>Minha intenção com este espaço é criar uma comunidade onde possamos trocar experiências, aprender juntos e evoluir como profissionais. Se você também está começando ou já trabalha na área, sinta-se à vontade para comentar, sugerir temas e interagir! </p>
+                    <p>Obrigado por estar aqui. Vamos construir algo incrível juntos!</p>
+                </div>
+            </article>
+            <section id="contato">
+                <h2>Contato</h2>
+                <p>Se você quiser entrar em contato comigo, envie um e-mail ou preencha o formulário abaixo:</p>
+            
+                <form action="#" method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required><br>
+            
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required><br>
+            
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+        </div>      
+        <aside id="categoria">
+            <h2>Outros Posts</h2>
+            <ul>
+              <li><a href="#">Como comecei na programação</a></li>
+              <li><a href="#">Dicas para aprender HTML e CSS</a></li>
+              <li><a href="#">Meu primeiro projeto web</a></li>
+              <li><a href="#">Erros comuns de iniciantes</a></li>
+            </ul>
+          
+            <h2>Categorias</h2>
+            <ul>
+              <li><a href="#">Programação</a></li>
+              <li><a href="#">Estudos</a></li>
+              <li><a href="#">Projetos</a></li>
+              <li><a href="#">Vida de Dev</a></li>
+            </ul>
+          </aside>          
+    </main>
+    <footer>
+        <p>&copy; 2025 <span id="author">Carlos Jefferson</span>. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

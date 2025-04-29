@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: gray;
+}
+
+header h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: burlywood;
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul{
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li{
+    list-style-type: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header nav ul li a:hover{
+    background-color: green;
+    border-radius: 8px;
+    transition: ease-out 0.3s;
+}
+
+main{
+    display: flex;
+}
+
+.layout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(227, 227, 227);
+}
+
+#sobre{
+    padding: 8px;
+    background-color: white;
+    width: 90%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+article{
+    display: flex;
+    gap: 3rem;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+article img{
+    border-radius: 10%;
+}
+
+#contato{
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea{
+    resize: none;
+}
+
+input[type="submit"] {
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #005fa3;
+}
+
+footer{
+    padding: 4px;
+    text-align: center;
+    background-color: gray;
+}
+
+footer p{
+    font-family: 'Poppins';
+}
+
+#author{
+    font-weight: bold;
+}
+
+
