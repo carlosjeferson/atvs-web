@@ -12,10 +12,14 @@
     <header>
         <h1>Desenvolvimento Web Front-End</h1>
         <p>Aprenda a criar interfaces modernas e responsivas com HTML, CSS e JavaScript</p>
+        <button id="toggle-dark-mode">🌙 Modo Escuro</button>
     </header>
 
     <nav>
-        <ul>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul id="menu">
             <li><a href="#">Início</a></li>
             <li><a href="#">HTML</a></li>
             <li><a href="#">CSS</a></li>
@@ -71,5 +75,22 @@
         <p>Email: carlosjeferson@alu.ufc.br</p>
         <p>© 2025 Desenvolva Front</p>
     </footer>
+
+    <script>
+        const toggle = document.getElementById('toggle-dark-mode');
+        const body = document.body;
+        const togglemenu = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+    
+        toggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            toggle.textContent = body.classList.contains('dark-mode') ? '☀️ Modo Claro' : '🌙 Modo Escuro';
+        });
+
+        togglemenu.addEventListener('click', () => {
+        menu.classList.toggle('show');
+        });
+    </script>
+    
 </body>
 </html>
