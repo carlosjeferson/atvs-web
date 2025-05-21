@@ -33,7 +33,7 @@ nav ul li a{
     padding: 14px 20px;
     text-decoration: none;
     background-color: #333;
-    text-align: center;
+    
 }
 
 nav ul li a:hover{
@@ -191,12 +191,6 @@ footer {
         flex-direction: column;
     }
 
-    nav {
-        position: static;
-        z-index: auto;
-        top: auto;
-    }
-
     nav ul {
         display: none;
         flex-direction: column;
@@ -210,10 +204,11 @@ footer {
 
     .menu-toggle {
         display: block;
+        text-align: center;
     }
 
     nav ul li a {
-        text-align: left;
+        text-align: center;
         padding: 14px;
     }
 }
