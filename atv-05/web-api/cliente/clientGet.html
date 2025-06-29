@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumindo API</title>
+</head>
+<body>
+    
+    <div id="professores">
+        Carregando...
+        <!-- <span id="name"></span>
+        <p id="titulo"></p>
+        <img id="img" src="" alt=""> -->
+    </div>
+
+    <script>
+        // const nameProfessor = document.getElementById('name');
+        // const tituloProfessor = document.getElementById('titulo');
+        // const img =  document.getElementById('img');
+        
+        async function professor() {
+            const res = await fetch("http://localhost:3000/professores/listar");
+            const json = await res.json();
+            // console.log(json);
+            let professoresDiv = document.getElementById('professores');
+            professoresDiv.innerHTML = '';
+            for (professor of json){
+                let novaDiv = document.createElement("div");
+                novaDiv.innerHTML = `
+                                    <h1>${professor.nome}</h1>
+                                    <p>${professor.titulacao}</p>
+                                    <img src='${professor.img}'/> <br />
+                                    <a href='./clientPut.html?id=${professor.id}'>EDITAR</a>
+                                    `  
+                professoresDiv.appendChild(novaDiv);
+            }
+
+        }
+
+        professor()
+
+    </script>
+</body>
+</html>

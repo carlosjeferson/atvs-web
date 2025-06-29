@@ -1,0 +1,47 @@
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.alunos{
+    padding: 16px;
+    width: 600px;
+    height: auto;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.alunos h1{
+    color: rgb(31, 142, 252);
+    font-weight: bold;
+    font-family: sans-serif, Arial;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    color: #333;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra sutil para destacar a tabela */
+    border-radius: 8px; /* Cantos arredondados */
+    overflow: hidden; /* Garante que os cantos arredondados funcionem com o border-collapse */
+}
+
+/* Estilo dos cabeçalhos */
+th {
+    background-color: #007bff; /* Cor de fundo azul para cabeçalhos */
+    color: #ffffff; /* Texto branco nos cabeçalhos */
+    font-weight: bold;
+    text-align: left;
+    padding: 12px 15px;
+    border: 2px solid #0057b37f; /* Borda inferior mais escura */
+    text-align: center;
+}
+
+/* Estilo das células de dados */
+td {
+    padding: 10px 15px;
+    border: 1px solid #ced0d3; /* Borda inferior cinza clara */
+    text-align: center;
+}

@@ -1,0 +1,2 @@
+# Ignora a pasta node_modules dentro de backend
+backend/node_modules/
