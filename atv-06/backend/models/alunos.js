@@ -1,6 +1,6 @@
 class AlunoModel{
 
-    constructor(){
+    constructor(id, nome, curso, ira){
         this.id = id;
         this.nome = nome;
         this.curso = curso;

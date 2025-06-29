@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/atv-06/frontend/assets/css/criarAluno.css">
+    <title>Criar Aluno</title>
+</head>
+<body>
+    <div class="criarAluno">
+        <h1>Cadastrar Aluno</h1>
+        <a href="../index.html">Voltar</a>
+        <form onsubmit="criarAluno(event)">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required placeholder="Digite seu nome completo">
+            </div>
+
+            <div class="form-group">
+                <label for="curso">Curso:</label>
+                <input type="text" name="curso" id="curso" required placeholder="Ex: Engenharia de Software">
+            </div>
+
+            <div class="form-group">
+                <label for="ira">Ira:</label>
+                <input type="number" name="ira" id="ira" step="0.01" min="0" max="10" required placeholder="Ex: 8.75">
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+    <script src="/atv-06/frontend/assets/js/criar_alunos.js"></script>
+</body>
+</html>

@@ -2,6 +2,47 @@
 body{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header nav ul {
+    margin-top: 2rem;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+/* Estilo do Botão de Navegação (o link "Cadastrar") */
+.btn-nav {
+    display: inline-block; /* Permite aplicar padding, width/height e transformações */
+    background-color: #007bff; /* Cor de fundo azul primária */
+    color: #ffffff; /* Cor do texto branco */
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    padding: 10px 20px; /* Espaçamento interno (altura e largura do botão) */
+    border-radius: 5px; /* Cantos levemente arredondados */
+    font-weight: 600; /* Texto semi-negrito */
+    font-size: 1em; /* Tamanho da fonte, relativo ao tamanho base do corpo */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    /* Adiciona transições suaves para interatividade */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; 
+    border: 1px solid transparent; /* Borda transparente para consistência e transição */
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+.btn-nav:hover {
+    background-color: #0056b3; /* Azul mais escuro */
+    transform: translateY(-1px); /* Move o botão ligeiramente para cima */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais pronunciada */
+}
+
+/* Efeito ao clicar no botão */
+.btn-nav:active {
+    background-color: #004085; /* Azul ainda mais escuro */
+    transform: translateY(0); /* Retorna o botão à posição original */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra mais sutil ao clicar */
 }
 
 .alunos{

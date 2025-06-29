@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/frontend/assets/css/style.css">
+    <link rel="stylesheet" href="/atv-06/frontend/assets/css/style.css">
     <title>Alunos</title>
-    <script src="assets/js/listar_alunos.js"></script>
-
 </head>
 <body>
-    <div class="alunos">
-        <h1>Tabela de Alunos</h1>
-        <table id="table">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nome</th>
-                    <th>Curso</th>
-                    <th>Ira</th>
-                </tr>
-            </thead>
-        </table>
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="pages/criarAluno.html" class="btn-nav">Cadastrar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="alunos">
+            <h1>Tabela de Alunos</h1>
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Curso</th>
+                        <th>Ira</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </main>
+    <script src="/atv-06/frontend/assets/js/listar_alunos.js"></script>
 </body>
 </html>
