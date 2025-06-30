@@ -8,9 +8,9 @@
 </head>
 <body>
     <div class="criarAluno" id="criarAluno">
-        <h1>Cadastrar Aluno</h1>
+        <h1>Editar Aluno</h1>
         <a href="../index.html" id="btn-voltar">Voltar</a>
-        <form onsubmit="criarAluno(event)">
+        <form onsubmit="editarAluno(event)">
             <div class="form-group">
                 <label for="nome">Nome:</label>
                 <input type="text" name="nome" id="nome" required placeholder="Digite seu nome completo">
@@ -26,9 +26,9 @@
                 <input type="number" name="ira" id="ira" step="0.01" min="0" max="10" required placeholder="Ex: 8.75">
             </div>
 
-            <button type="submit">Cadastrar</button>
+            <button type="submit">Editar</button>
         </form>
     </div>
-    <script src="/atv-06/frontend/assets/js/criar_alunos.js"></script>
+    <script src="/atv-06/frontend/assets/js/editar_alunos.js"></script>
 </body>
 </html>
