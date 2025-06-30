@@ -18,6 +18,37 @@ class AlunoServices {
         Alunos.push(novoAluno);
         return novoAluno;
     }
+
+    static recuperar(id){
+        for(let i = 0; i < Alunos.length; i++){
+            if (Alunos[i].id == id){
+                return Alunos[i];
+            }
+        }
+        return null;
+    }
+
+    static editar(id, aluno){
+        for(let i = 0; i < Alunos.length; i++){
+            if(Alunos[i].id == id){
+                Alunos[i].nome = aluno.nome;
+                Alunos[i].curso = aluno.curso;
+                Alunos[i].ira = aluno.ira;
+                return Alunos[i]
+            }
+        }
+        return null;
+    }
+
+    static deletar(id){
+        for(let i = 0; i < Alunos.length; i++){
+            if(Alunos[i].id == id){
+                Alunos.splice(i,1);
+                return true;
+            }
+        }
+        return false;
+    }
 }
 
 module.exports = AlunoServices;
