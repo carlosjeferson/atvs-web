@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade 06</title>
+    <title>COVID-19 por País</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -40,42 +40,39 @@
         tr:hover {
             background-color: #f1f1f1;
         }
-        tbody tr td:nth-child(3),
-        tbody tr td:nth-child(4),
-        tbody tr td:nth-child(5) {
-            text-align: right;
-        }
         .footer {
             text-align: center;
             margin-top: 40px;
             font-size: 0.9em;
             color: #666;
         }
+        .destaque-brasil {
+            background-color: #e0ffe0 !important;
+        }
     </style>
 </head>
 <body>
-    <h1>Situação de Saúde por Estado no Brasil</h1>
+    <h1>Situação da COVID-19 por País</h1>
 
     <table>
         <thead>
             <tr>
-                <th>Nome do Estado</th>
-                <th>Abreviação</th>
-                <th>Número de Casos</th>
-                <th>Número de Suspeitos</th>
-                <th>Número de Falecimentos</th>
+                <th>País</th>
+                <th>Casos</th>
+                <th>Confirmados</th>
+                <th>Mortes</th>
+                <th>Recuperados</th>
             </tr>
         </thead>
         <tbody id="table-body">
-            
+            <!-- Dados inseridos via JS -->
         </tbody>
     </table>
 
-    <div id="media">
-        <p></p>
-        <p></p>
-        <p></p>
+    <div class="footer">
+        Dados obtidos via API pública - <code>covid19-brazil-api</code>
     </div>
-    <script src="index.js"></script>
+
+    <script src="index2.js"></script>
 </body>
 </html>
