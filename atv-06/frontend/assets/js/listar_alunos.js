@@ -43,17 +43,32 @@ async function obterAlunos() {
 obterAlunos();
 
 async function apagarAluno(id) {
-    const response = await fetch(`http://localhost:3000/alunos/deletar/${id}`,
-        {
+    const temCerteza = confirm("Tem certeza que deseja deletar este aluno?");
+
+    if (!temCerteza) {
+        console.log("Operação de deleção cancelada pelo usuário.");
+        return; 
+    }
+
+   try {
+        const response = await fetch(`http://localhost:3000/alunos/deletar/${id}`, {
             method: "DELETE",
+        });
 
+        if (!response.ok) {
+            // Trata erros de resposta da API (ex: 404, 500)
+            const errorText = await response.text();
+            throw new Error(`Erro ao deletar aluno: ${response.status} - ${errorText}`);
         }
-    )
-    const json = await response.json();
-    console.log(json);
 
-    // let table = document.getElementById('table');
-    // table.innerHTML = ''
+        const json = await response.json();
+        console.log(json);
 
-    obterAlunos()
+        // Atualiza a lista de alunos após a deleção
+        obterAlunos(); 
+
+    } catch (error) {
+        console.error("Ocorreu um erro ao tentar apagar o aluno:", error);
+        alert("Não foi possível apagar o aluno. Tente novamente mais tarde.");
+    }
 }

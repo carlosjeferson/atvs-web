@@ -28,6 +28,18 @@ h1 {
     font-weight: 600;
 }
 
+#btn-voltar{
+    display: block;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #007bff; /* Cor de fundo azul principal */
+    width: 20%;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
 /* Estilo para o grupo de formulário (label + input) */
 .form-group {
     margin-bottom: 20px;

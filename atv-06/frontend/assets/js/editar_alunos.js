@@ -22,8 +22,28 @@ function editarAluno(event) {
     const curso = document.getElementById("curso").value
     const ira = document.getElementById("ira").value
     const divform = document.getElementById('criarAluno');
-    const btnVoltar = document.getElementById('btn-voltar');
-    const p = document.createElement("p");
+    const form = document.querySelector('form');
+    
+    let p;
+
+    if (divform.children[2] && divform.children[2].tagName === 'P') {
+        // Se já existe um parágrafo no segundo filho, apenas atualiza o texto dele
+        p = divform.children[2];
+        p.textContent = "O usuário foi editado com sucesso";
+    } else {
+        // Se não existe ou não é um parágrafo, cria um novo e insere
+        p = document.createElement("p");
+        p.textContent = "O usuário foi editado com sucesso";
+        divform.insertBefore(p, form);
+    }
+
+    // Remove o parágrafo após 5 segundos (5000 milissegundos)
+    setTimeout(() => {
+        if (p && p.parentNode) {
+            p.parentNode.removeChild(p);
+        }
+    }, 3000);
+
     
     const alunoModificado = {nome: nome, curso: curso, ira: ira}
 
@@ -39,12 +59,4 @@ function editarAluno(event) {
     .then(json => console.log(json))
     .catch(error => console.log(error))
 
-     // Mensagem de edição concluída
-    p.textContent = "O usuário foi editado com sucesso";
-    divform.insertBefore(p, btnVoltar)
-
-    // Limpar formulário
-    document.getElementById('nome').value = '';
-    document.getElementById('curso').value = '';
-    document.getElementById('ira').value = '';
 }
