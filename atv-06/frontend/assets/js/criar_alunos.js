@@ -10,17 +10,14 @@ async function criarAluno(event) {
     let p;
 
     if (divform.children[2] && divform.children[2].tagName === 'P') {
-        // Se já existe um parágrafo no segundo filho, apenas atualiza o texto dele
         p = divform.children[2];
         p.textContent = "O usuário foi cadastrado com sucesso";
     } else {
-        // Se não existe ou não é um parágrafo, cria um novo e insere
         p = document.createElement("p");
         p.textContent = "O usuário foi cadastrado com sucesso";
         divform.insertBefore(p, form);
     }
 
-    // Remove o parágrafo após 5 segundos (5000 milissegundos)
     setTimeout(() => {
         if (p && p.parentNode) {
             p.parentNode.removeChild(p);

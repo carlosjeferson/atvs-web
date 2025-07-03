@@ -16,11 +16,8 @@ async function obterAlunos() {
         const novaTd6 = document.createElement("td");
         const novoLink = document.createElement("a");
         const img = document.createElement("img");
-        // const img2 = document.createElement("img");
         
         img.src = 'https://img.icons8.com/windows/32/create-new.png'
-        // img2.src = 'https://img.icons8.com/material-outlined/24/filled-trash.png'
-        // img2.style.cursor = 'pointer';
         novoLink.appendChild(img);
         novoLink.href = `./pages/editarAluno.html?id=${aluno.id}`;
         novaTd.innerHTML = aluno.id;
@@ -28,7 +25,6 @@ async function obterAlunos() {
         novaTd3.innerHTML = aluno.curso;
         novaTd4.innerHTML = aluno.ira;
         novaTd6.innerHTML = `<img src='https://img.icons8.com/material-outlined/24/filled-trash.png' onclick='apagarAluno(${aluno.id})' style="cursor: pointer;">`
-
 
         novaTd5.appendChild(novoLink);
         novaTr.appendChild(novaTd);
